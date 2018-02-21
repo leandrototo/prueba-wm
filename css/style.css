@@ -1,0 +1,78 @@
+/* estilos.css */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #27262b;
+    /* para llegar a la imagen tengo que salir de la carpeta css */
+    background-image: url(../images/pattern.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+-----------------
+CABECERA
+------------------ */
+.cabecera{
+    height: 95px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    /* para orden horizontal // space-between los lleva cada uno a una punta */
+    justify-content: space-between;
+    /* para orden vertical */
+    align-items: center;
+}
+.cabecera h1{
+    color: #f90;
+}
+
+/* ----------------------
+    CONTENEDOR
+---------------------- */
+
+.contenedor{
+    background-color: white;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ----------------------
+    BOTONERA
+---------------------- */
+.botonera{
+    padding-top: 10px;
+    background-color: orange;
+    height: 56px;
+}
+
+.botonera-lista{
+    width: 70%;
+    list-style-type: none;
+    float: left;
+    display: flex;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+.botonera-lista a{
+    /* background-color: green; */
+    display: block;
+    flex-grow: 1;
+    padding: 10px 25px;
+    border-right: 1px solid white;
+}
+.botonera-lista a:hover{
+    background-color: red;
+}
+.botonera form{
+    width: 30%;
+    background-color: yellow;
+    float: right;
+    margin-top: 10px;
+}
